@@ -8,7 +8,11 @@
 </head>
 
 <body>
+  <canvas id="canvas_caminho" width="300" height="300">
     <script>
+      var canvas = document.getElementById('canvas_caminho');
+      var context = canvas.getContext('2d');
+
       context.beginPath();
       context.lineTo(75, 250);
       context.lineTo(150, 50);
@@ -18,7 +22,10 @@
 
       context.lineWidth = 2;
       context.strokeStyle = 'red';
+
+      context.stroke()
     </script>
+  </canvas>
 </body>
 
 </html>
