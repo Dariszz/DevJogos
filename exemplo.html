@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retangulo Colorido</title>
+</head>
+
+<body style="display: flex; justify-content: center;">
+    <canvas id="meu_canvas" width="200" height="200" style="background-color: aqua;">
+        <script>
+            var canvas = document.getElementById('meu_canvas');
+            var context = canvas.getContext('2d');
+
+            context.fillStyle = 'green';
+            context.fillRect(50, 50, 100, 100);
+
+            context.lineWidth = 6;
+            context.strokeStyle = 'blue';
+            context.strokeRect(50, 50, 100, 100);
+        </script>
+    </canvas>
+</body>
+
+</html>
